@@ -44,7 +44,10 @@ class Song
   end
   
   def self.new_from_filename(mp3file)
-    
+    song =self.new 
+    song.artist_name = mp3file.split(/[-.]/)[1].strip
+    song.name = mp3file.split(/[-.]/)[0].strip
+    @@
  end
  
 end
