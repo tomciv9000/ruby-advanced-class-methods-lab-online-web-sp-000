@@ -48,6 +48,8 @@ class Song
     song.name = mp3file.split(/[-.]/)[1].strip
     song.artist_name = mp3file.split(/[-.]/)[0].strip
     song
- end
+  end
+  
+  def self.create_from_filename(mp3file)
  
 end
