@@ -50,10 +50,11 @@ class Song
     song
   end
   
-  def self.create_fsong = self.new 
-    song = self.new
+  def self.create_from_filename(mp3file)
+    song = self.new 
     song.name = mp3file.split(/[-.]/)[1].strip
     song.artist_name = mp3file.split(/[-.]/)[0].strip
     @@all << song
   end
+  
 end
