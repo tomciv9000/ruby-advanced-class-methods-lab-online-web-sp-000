@@ -1,3 +1,5 @@
+require pry
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -38,7 +40,8 @@ class Song
   end
   
   def self.alphabetical
-    self.all.name.sort_by{ |name| a<=>b}
+    binding.pry
+    self.all.sort_by{ |name| a<=>b}
   end
   
 end
